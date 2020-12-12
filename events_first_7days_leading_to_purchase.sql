@@ -100,6 +100,10 @@ relevant_events as (
     rep.country
   from
     purchases as rep
+  left join
+    onboarding as onb on onb.user_pseudo_id = rep.user_pseudo_id
+  where
+    rep.first_purchase_timestamp between onb.onboarding_timestamp and timestamp_add(onb.onboarding_timestamp, interval 7 day)
 )
 
 select
