@@ -109,9 +109,12 @@ relevant_events as (
 select
   user_pseudo_id,
   event_name,
+  platform,
+  country,
+  device_language,
   count(event_timestamp) as occurrences_count,
   min(event_timestamp) as first_event_timestamp,
   max(event_timestamp) as last_event_timestamp
 from
   relevant_events
-group by 1,2;
+group by 1,2,3,4,5;
