@@ -17,7 +17,7 @@ with initial_dataset as (
   where
     eve.event_timestamp >= '2020-11-01'
   and
-    eve.event_name in ('sv__OnBoardingTutorialVie','sv__OnBoardingTutorialVi','sv__WelcomeCarouselDialog','sv__NewPremiumAct','TryToBuyNewPAct','TryToBuyNewPF','ClickOnWholeView','StartListening','sv__StoryDetails','StartNStory','StartBekids','FabClickedPremium','PremiumBarClickedSD','PremiumBarClickedMain','AAPageA','ProPageA','GoldPageA','AAPageF','ProPageF','GoldPageF','EnterFcMore','sv__GlossaryF','LibraryClicked','sv__Libraries','PlayPrevParagraphFromButton','PlayNextParagraphFromButton','in_app_purchase','PurchaseNormal')
+    eve.event_name in ('sv__OnBoardingTutorialVie','sv__OnBoardingTutorialVi','sv__WelcomeCarouselDialog','sv__NewPremiumAct','TryToBuyNewPAct','TryToBuyNewPF','ClickOnWholeView','StartListening','sv__StoryDetails','StartNStory','StartBekids','FabClickedPremium','PremiumBarClickedSD','PremiumBarClickedMain','sv__AAPageA','sv__ProPageA','sv_GoldPageA','sv__AAPageF','sv__ProPageF','sv__GoldPageF','EnterFcMore','sv__GlossaryF','LibraryClicked','sv__Libraries','PlayPrevParagraph','PlayNextParagraphFromBut','sv__OnBoardingTutorialVie','in_app_purchase','PurchaseNormal')
 ),
 
 onboarding as (
